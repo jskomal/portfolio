@@ -19,12 +19,11 @@ function App() {
   }
 
   return (
-    <>
+    <div>
       <h1>
         <Typewriter words={["Hello there, I'm Jordan."]} />
       </h1>
       <p>Front End Software Engineer</p>
-
       <div className='project'>
         <h2>{links[linkIndex].title}</h2>
         <p>{links[linkIndex].description}</p>
@@ -41,15 +40,15 @@ function App() {
           <a href={links[linkIndex].deployURL}>
             <img className='svg' src={deploy} alt='To Deploy Link' />
           </a>
-          <button onClick={handleSlides}>Next Project</button>
+          <a onClick={handleSlides}>Next Project</a>
         </div>
       </div>
-      <div className='contacts'>
+      <footer>
         <a href='https://github.com/jskomal'>GitHub</a>
         <a href='https://www.linkedin.com/in/jskomal/'>LinkedIn</a>
-        <a href='mailto:jskomal@gmail.com'>Email me</a>
-      </div>
-    </>
+        <a href='mailto:jskomal@gmail.com'>Email</a>
+      </footer>
+    </div>
   )
 }
 

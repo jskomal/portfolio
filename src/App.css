@@ -1,14 +1,17 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .project {
+  min-width: 350px;
   width: 50vw;
   max-width: 650px;
-  height: 75vh;
   border: 1px solid white;
   padding: 1rem;
   border-radius: 1rem;
@@ -18,14 +21,17 @@
   align-items: center;
 }
 
-h2,
-h1 {
+h1,
+h2 {
   line-height: 0;
+  font-size: 1.5rem;
 }
 
 .preview-img {
   min-height: 200px;
   height: 40vh;
+  max-height: 300px;
+  min-width: 300px;
   width: 45vw;
   max-width: 550px;
   border-radius: 1rem;
@@ -33,6 +39,8 @@ h1 {
 }
 
 .buttons-row {
+  margin-top: 0.5rem;
+  min-width: 300px;
   width: 45vw;
   max-width: 600px;
   display: grid;
@@ -43,15 +51,17 @@ h1 {
 a {
   display: grid;
   place-content: center;
+  padding: 0.3rem;
   border-radius: 1rem;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #333;
   cursor: pointer;
   transition: border-color 0.25s;
+  text-decoration: none;
+  color: inherit;
 }
 
 a:hover {
@@ -62,11 +72,18 @@ a:hover {
   filter: invert(1);
 }
 
-.contacts {
+footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 1rem;
   gap: 1rem;
+  background-color: #333;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+footer > a {
+  background-color: #1a1a1a;
 }
 
 @media (prefers-color-scheme: light) {

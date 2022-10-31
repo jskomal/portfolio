@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 :root {
@@ -15,12 +16,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-}
-
-body {
-  margin: 0;
-  min-width: 320px;
-  height: 100vh;
 }
 
 button {

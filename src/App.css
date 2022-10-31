@@ -4,3 +4,73 @@
   padding: 2rem;
   text-align: center;
 }
+
+.project {
+  width: 50vw;
+  max-width: 650px;
+  height: 75vh;
+  border: 1px solid white;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2,
+h1 {
+  line-height: 0;
+}
+
+.preview-img {
+  min-height: 200px;
+  height: 40vh;
+  width: 45vw;
+  max-width: 550px;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.buttons-row {
+  width: 45vw;
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+a {
+  display: grid;
+  place-content: center;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+a:hover {
+  border-color: #646cff;
+}
+
+.svg {
+  filter: invert(1);
+}
+
+.contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+@media (prefers-color-scheme: light) {
+  .svg {
+    filter: invert(0);
+  }
+}

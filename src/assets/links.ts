@@ -1,6 +1,6 @@
 import sampleSpaceImg from './images/sample-space.gif'
 import rollForInitiativeImg from './images/roll-for-initiative.gif'
-import ticTacToeImg from './images/tic-tac-toe.gif'
+import ideaBoxImg from './images/ideabox.png'
 
 export type TProject = {
   title: string
@@ -25,17 +25,18 @@ export const links: TProject[] = [
     title: 'Roll for Initiative',
     description:
       'Hail and well met, traveler! Roll for Initiative is a turn-based brawler featuring the mythical monsters and courageous heroes from the Dungeons and Dragons (DnD) universe! Engage in single combat against one of five unique monstrous foes using one of the three playable classes from classic DnD: Fighter, Cleric, or Rogue. Your fate is cast by the dice!',
-    deployURL: 'https://roll-for-initiative-turing.herokuapp.com/',
+    deployURL: 'https://roll-for-initiative-one.vercel.app/',
     githubURL: 'https://github.com/jskomal/roll-for-initiative',
     previewImg: rollForInitiativeImg,
     id: 1
   },
   {
-    title: 'Tic Tac Toe',
-    description: 'Play Tic Tac Toe written in React and Typescript',
-    deployURL: 'https://tic-tac-toe-jskomal.herokuapp.com/',
-    githubURL: 'https://github.com/jskomal/tic-tac-toe-react',
-    previewImg: ticTacToeImg,
+    title: 'Idea Ideabox Box',
+    description:
+      'Built to help students get out of a rut building the same project over and over again, get inspired with the magic of adjectives.',
+    deployURL: 'https://idea-idea-box-box.vercel.app/',
+    githubURL: 'https://github.com/jskomal/idea-idea-box-box',
+    previewImg: ideaBoxImg,
     id: 2
   }
 ]

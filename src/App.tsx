@@ -19,11 +19,15 @@ function App() {
   }
 
   return (
-    <div>
-      <h1>
-        <Typewriter words={["Hello there, I'm Jordan."]} />
-      </h1>
-      <p>Front End Software Engineer</p>
+    <main>
+      <header>
+        <h1>
+          <Typewriter words={["Hello there, I'm Jordan."]} />
+        </h1>
+        <p>
+          <Typewriter words={['Front End Software Engineer']} />
+        </p>
+      </header>
       <div className='project'>
         <h2>{links[linkIndex].title}</h2>
         <p>{links[linkIndex].description}</p>
@@ -48,7 +52,7 @@ function App() {
         <a href='https://www.linkedin.com/in/jskomal/'>LinkedIn</a>
         <a href='mailto:jskomal@gmail.com'>Email</a>
       </footer>
-    </div>
+    </main>
   )
 }
 

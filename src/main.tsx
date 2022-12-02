@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
-import RollForInitiative from './redirect_components/RollForInitiative'
-import SampleSpace from './redirect_components/SampleSpace'
+import Redirect from './Redirect'
 
 const router = createBrowserRouter([
   {
@@ -13,11 +12,11 @@ const router = createBrowserRouter([
   },
   {
     path: '/roll-for-initiative',
-    element: <RollForInitiative />
+    element: <Redirect url='https://roll-for-initiative-jskomal.vercel.app/' />
   },
   {
     path: 'sample-space',
-    element: <SampleSpace />
+    element: <Redirect url='https://samplespace.surge.sh/' />
   }
 ])
 

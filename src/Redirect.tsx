@@ -1,14 +1,18 @@
-import { useEffect } from 'react'
+import { useEffect } from 'react';
 
 type RedirectProps = {
-  url: string
-}
+	url: string;
+};
 
-const Redirect = ({url}: RedirectProps) => {
-  useEffect(() => {
-    window.location.href = url
-  }, [])
-  return <></>
-}
+const Redirect = ({ url }: RedirectProps) => {
+	useEffect(() => {
+		window.location.href = url;
+	}, []);
+	return (
+		<>
+			<h1>Redirecting...</h1>
+		</>
+	);
+};
 
-export default Redirect
+export default Redirect;

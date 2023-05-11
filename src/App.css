@@ -123,7 +123,7 @@ a:hover {
 
 .img-and-links {
 	display: grid;
-	grid-template-columns: 9fr 1fr;
+	grid-template-columns: 4.5fr 1fr;
 	margin-bottom: 0.25rem;
 }
 
@@ -133,10 +133,16 @@ a:hover {
 	width: 100px;
 	background-color: #333;
 	border-radius: 1rem;
+	line-height: 0;
 }
 
 .project-links > a > img {
 	scale: 1.5;
+	translate: 3px;
+}
+
+.project-card > p {
+	padding: 0 2rem;
 }
 
 @media screen and (max-width: 500px) {
@@ -153,6 +159,7 @@ a:hover {
 
 	.project-links > a > img {
 		scale: 1;
+		translate: 0;
 	}
 
 	.img-and-links {
@@ -166,5 +173,9 @@ a:hover {
 		width: 100%;
 		max-width: 300px;
 		padding: 0.5rem;
+	}
+	.project-card > p {
+		padding: 0;
+		text-align: left;
 	}
 }

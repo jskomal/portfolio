@@ -1,5 +1,6 @@
 import { Typewriter } from 'react-simple-typewriter'
 import Skills from './Skills'
+import Projects from './Projects'
 
 import gitHub from './assets/images/github.svg'
 import email from './assets/images/email-svgrepo-com.svg'
@@ -7,7 +8,6 @@ import linkedIn from './assets/images/linkedin-svgrepo-com.svg'
 import headshot from './assets/images/headshot.png'
 
 import './App.css'
-import Projects from './Projects'
 
 function App() {
   return (

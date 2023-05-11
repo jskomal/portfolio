@@ -9,8 +9,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  height: 100vh;
 }
 
 header {
@@ -24,21 +22,10 @@ header {
   margin-bottom: 1rem;
 }
 
-.project {
-  min-width: 350px;
-  width: 50vw;
-  max-width: 650px;
-  border: 1px solid white;
-  padding: 1rem;
-  border-radius: 1rem;
-  display: grid;
-  gap: 0.5rem;
-}
-
-h1,
-h2 {
+h1 {
   line-height: 1;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+  margin: 2rem 0;
 }
 
 .preview-img {
@@ -52,57 +39,108 @@ h2 {
   object-fit: cover;
 }
 
-.buttons-row {
-  margin-top: 0.5rem;
-  min-width: 300px;
-  width: 45vw;
-  max-width: 600px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
-}
-
-a {
-  display: grid;
-  place-content: center;
-  padding: 0.5rem;
-  border-radius: 1rem;
-  border: 1px solid transparent;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #333;
-  cursor: pointer;
-  transition: border-color 0.25s;
-  text-decoration: none;
-  color: inherit;
-  min-width: 80px;
-  width: 10vw;
-  max-width: 150px;
-}
-
 a:hover {
   border-color: #646cff;
 }
 
 .svg {
   filter: invert(1);
+  width: 30px;
+  height: 30px;
 }
 
-footer {
+.headshot {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px 0.5px rgb(63, 63, 63);
+}
+
+.grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 1rem;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1rem;
   gap: 1rem;
-  background-color: #333;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-  min-width: 350px;
-  width: 50vw;
-  max-width: 650px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  height: 175px;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.about > p {
+  font-size: 1.25rem;
+}
+
+.links {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.blurb {
+  margin: 2rem 0;
+  max-width: 750px;
+  text-align: left;
+}
+
+.bold {
+  font-weight: 800;
+  font-size: 1.25rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+.blurb > p {
+  margin: 1rem 0;
+}
+
+.skills-badge {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.badge-text {
+  text-align: center;
+}
+
+.stack {
+  font-style: italic;
   margin-top: 1rem;
 }
 
-footer > a {
-  background-color: #1a1a1a;
+.project-card {
+  background-color: #161616;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+.project-title {
+  text-align: center;
+  margin: 0.25rem;
+}
+
+.img-and-links {
+  display: grid;
+  grid-template-columns: 9fr 1fr;
+  margin-bottom: 0.25rem;
+}
+
+.project-links {
+  display: grid;
+  background-color: #333;
+  border-radius: 1rem;
+  min-width: 100px;
+  padding: 1rem;
+  place-items: center;
 }

@@ -1,57 +1,63 @@
-import { useState } from 'react'
 import { Typewriter } from 'react-simple-typewriter'
+import Skills from './Skills'
 
-import { links } from './assets/links'
 import gitHub from './assets/images/github.svg'
-import deploy from './assets/images/deploy-svgrepo-com.svg'
+import email from './assets/images/email-svgrepo-com.svg'
+import linkedIn from './assets/images/linkedin-svgrepo-com.svg'
+import headshot from './assets/images/headshot.png'
 
 import './App.css'
+import Projects from './Projects'
 
 function App() {
-  const [linkIndex, setLinkIndex] = useState(0)
-
-  const handleSlides = () => {
-    if (linkIndex === links.length - 1) {
-      setLinkIndex(0)
-    } else {
-      setLinkIndex((prev) => prev + 1)
-    }
-  }
-
   return (
     <main>
-      <header>
-        <h1>
-          <Typewriter words={["Hello there, I'm Jordan."]} />
-        </h1>
-        <p>
-          <Typewriter words={['Front End Software Engineer']} />
-        </p>
-      </header>
-      <div className='project'>
-        <h2>{links[linkIndex].title}</h2>
-        <p>{links[linkIndex].description}</p>
-        <img
-          className='preview-img'
-          src={links[linkIndex].previewImg}
-          alt={links[linkIndex].title}
+      <h1>
+        <Typewriter
+          words={["Hey there, I'm Jordan"]}
+          cursor={true}
+          cursorBlinking={false}
+          cursorStyle='👋'
         />
-        <div className='buttons-row'>
-          <a href={links[linkIndex].githubURL}>
-            <img className='svg' src={gitHub} alt='To GitHub' />
-          </a>
-
-          <a href={links[linkIndex].deployURL}>
-            <img className='svg' src={deploy} alt='To Deploy Link' />
-          </a>
-          <a onClick={handleSlides}>Next Project</a>
+      </h1>
+      <div className='grid'>
+        <img className='headshot' src={headshot} alt='Jordan Skomal photo' />
+        <div className='about'>
+          <p>Software Engineer</p>
+          <p>Jazz Trumpeter</p>
+          <p>Problem Solver</p>
+          <div className='links'>
+            <a href='https://github.com/jskomal'>
+              <img className='svg' src={gitHub} alt='Link to my Github page' />
+            </a>
+            <a href='mailto:jskomal@gmail.com'>
+              <img src={email} alt='email me!' className='svg' />
+            </a>
+            <a href='https://www.linkedin.com/in/jskomal/'>
+              <img src={linkedIn} alt='Link to my LinkedIn page' className='svg' />
+            </a>
+          </div>
         </div>
       </div>
-      <footer>
-        <a href='https://github.com/jskomal'>GitHub</a>
-        <a href='https://www.linkedin.com/in/jskomal/'>LinkedIn</a>
-        <a href='mailto:jskomal@gmail.com'>Email</a>
-      </footer>
+      <article className='blurb'>
+        <h2 className='bold'>
+          Musician and Educator -{'>'} Software Bootcamp -{'>'} Computer Science
+        </h2>
+        <p>
+          I am a Jazz Musician turned Software Engineer, pursuing a degree in Computer
+          Science.
+        </p>
+        <p>
+          Bringing extensive experience in customer-facing roles, I thrive in fast-paced
+          environments. By starting my career in music I understand how to apply
+          creativity to complex problems, collaborate in a customer-focused environment,
+          and understand the nature and benefits of dedicated practice as deeply as the
+          best software developers.
+        </p>
+        <Skills />
+        <Projects />
+        <p>More coming soon...</p>
+      </article>
     </main>
   )
 }

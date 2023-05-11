@@ -164,6 +164,7 @@ a:hover {
 	.project-links {
 		grid-template-columns: repeat(2, 1fr);
 		width: 100%;
+		max-width: 300px;
 		padding: 0.5rem;
 	}
 }

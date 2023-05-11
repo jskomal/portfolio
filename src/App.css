@@ -1,175 +1,169 @@
 #root {
-  margin: 0 auto;
-  min-width: 320px;
-  max-width: 1280px;
-  text-align: center;
+	margin: 0 auto;
+	min-width: 320px;
+	max-width: 1280px;
+	text-align: center;
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-header {
-  background-color: #333;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-  min-width: 350px;
-  width: 50vw;
-  max-width: 650px;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  min-height: 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 h1 {
-  line-height: 1;
-  font-size: 2.5rem;
-  margin: 2rem 0;
-}
-
-.project {
-  min-width: 350px;
-  width: 50vw;
-  max-width: 650px;
-  min-height: 620px;
-  height: 70vh;
-  max-height: 1000px;
-  border: 1px solid white;
-  padding: 1rem;
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.img-link {
-  min-height: 200px;
-  height: 40vh;
-  max-height: 300px;
-  min-width: 300px;
-  width: 45vw;
-  max-width: 550px;
-  border-radius: 1rem;
+	line-height: 1;
+	font-size: 2.5rem;
+	margin: 2rem 0;
 }
 
 .preview-img {
-  min-height: 200px;
-  height: 40vh;
-  max-height: 300px;
-  min-width: 300px;
-  width: 45vw;
-  max-width: 550px;
-  border-radius: 1rem;
-  object-fit: cover;
+	min-height: 200px;
+	height: 40vh;
+	max-height: 300px;
+	min-width: 300px;
+	width: 45vw;
+	max-width: 550px;
+	border-radius: 1rem;
+	object-fit: cover;
 }
 
 a:hover {
-  border-color: #646cff;
+	border-color: #646cff;
 }
 
 .svg {
-  filter: invert(1);
-  width: 30px;
-  height: 30px;
+	filter: invert(1);
+	width: 30px;
+	height: 30px;
 }
 
 .headshot {
-  width: 175px;
-  height: 175px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 0 10px 0.5px rgb(63, 63, 63);
+	width: 175px;
+	height: 175px;
+	border-radius: 50%;
+	object-fit: cover;
+	box-shadow: 0 0 10px 0.5px rgb(63, 63, 63);
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 1rem;
-  gap: 1rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 1rem;
+	gap: 1rem;
 }
 
 .about {
-  display: flex;
-  flex-direction: column;
-  height: 175px;
-  width: 100%;
-  justify-content: space-evenly;
+	display: flex;
+	flex-direction: column;
+	height: 175px;
+	width: 100%;
+	justify-content: space-evenly;
 }
 
 .about > p {
-  font-size: 1.25rem;
+	font-size: 1.25rem;
 }
 
 .links {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(3, 1fr);
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(3, 1fr);
 }
 
 .blurb {
-  margin: 2rem 0;
-  max-width: 750px;
-  text-align: left;
+	min-width: 375px;
+	margin: 2rem 0;
+	max-width: 750px;
+	text-align: left;
 }
 
 .bold {
-  font-weight: 800;
-  font-size: 1.25rem;
-  text-align: center;
-  margin: 2rem 0;
+	font-weight: 800;
+	font-size: 1.25rem;
+	text-align: center;
+	margin: 2rem 0;
 }
 .blurb > p {
-  margin: 1rem 0;
+	margin: 1rem 0;
 }
 
 .skills-badge {
-  width: 75px;
-  height: 75px;
-  object-fit: contain;
+	width: 75px;
+	height: 75px;
+	object-fit: contain;
 }
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1rem;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 1rem;
 }
 
 .badge-text {
-  text-align: center;
+	text-align: center;
 }
 
 .stack {
-  font-style: italic;
-  margin-top: 1rem;
+	font-style: italic;
+	margin-top: 1rem;
 }
 
 .project-card {
-  background-color: #161616;
-  border-radius: 1rem;
-  padding: 1rem;
-  margin: 1rem 0;
+	background-color: #161616;
+	border-radius: 1rem;
+	padding: 1rem;
+	margin: 1rem 0;
 }
 .project-title {
-  text-align: center;
-  margin: 0.25rem;
+	text-align: center;
+	margin: 0.25rem;
 }
 
 .img-and-links {
-  display: grid;
-  grid-template-columns: 9fr 1fr;
-  margin-bottom: 0.25rem;
+	display: grid;
+	grid-template-columns: 9fr 1fr;
+	margin-bottom: 0.25rem;
 }
 
 .project-links {
-  display: grid;
-  place-items: center;
-  width: 100px;
-  background-color: #333;
-  border-radius: 1rem;
+	display: grid;
+	place-items: center;
+	width: 100px;
+	background-color: #333;
+	border-radius: 1rem;
 }
 
 .project-links > a > img {
-  scale: 1.5;
+	scale: 1.5;
+}
+
+@media screen and (max-width: 500px) {
+	.blurb {
+		width: 375px;
+		padding: 1rem 0.25rem;
+		text-align: center;
+	}
+
+	.skills-grid {
+		grid-template-columns: repeat(4, 1fr);
+		margin: 0;
+	}
+
+	.project-links > a > img {
+		scale: 1;
+	}
+
+	.img-and-links {
+		display: grid;
+		grid-template-columns: 1fr;
+		margin-bottom: 0.25rem;
+	}
+
+	.project-links {
+		grid-template-columns: repeat(2, 1fr);
+		width: 100%;
+		padding: 0.5rem;
+	}
 }

@@ -1,6 +1,6 @@
-import sampleSpaceImg from './images/sample-space.gif'
-import rollForInitiativeImg from './images/roll-for-initiative.gif'
-import ideaBoxImg from './images/ideabox.png'
+import sampleSpaceImg from './images/sample-space.gif';
+import rollForInitiativeImg from './images/roll-for-initiative.gif';
+import ideaBoxImg from './images/ideabox.png';
 
 export type TProject = {
   title: string

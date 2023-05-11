@@ -1,8 +1,8 @@
 #root {
-	margin: 0 auto;
-	min-width: 320px;
-	max-width: 1280px;
-	text-align: center;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1280px;
+  text-align: center;
 }
 
 main {
@@ -12,17 +12,16 @@ main {
 }
 
 header {
-	background-color: #333;
-	border-bottom-left-radius: 1rem;
-	border-bottom-right-radius: 1rem;
-	min-width: 350px;
-	width: 50vw;
-	max-width: 650px;
-	padding: 1rem;
-	margin-bottom: 1rem;
-	min-height: 80px;
+  background-color: #333;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  min-width: 350px;
+  width: 50vw;
+  max-width: 650px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  min-height: 80px;
 }
-
 
 h1 {
   line-height: 1;
@@ -31,41 +30,40 @@ h1 {
 }
 
 .project {
-	min-width: 350px;
-	width: 50vw;
-	max-width: 650px;
-	min-height: 620px;
-	height: 70vh;
-	max-height: 1000px;
-	border: 1px solid white;
-	padding: 1rem;
-	border-radius: 1rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+  min-width: 350px;
+  width: 50vw;
+  max-width: 650px;
+  min-height: 620px;
+  height: 70vh;
+  max-height: 1000px;
+  border: 1px solid white;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .img-link {
-	min-height: 200px;
-	height: 40vh;
-	max-height: 300px;
-	min-width: 300px;
-	width: 45vw;
-	max-width: 550px;
-	border-radius: 1rem;
+  min-height: 200px;
+  height: 40vh;
+  max-height: 300px;
+  min-width: 300px;
+  width: 45vw;
+  max-width: 550px;
+  border-radius: 1rem;
 }
 
 .preview-img {
-	min-height: 200px;
-	height: 40vh;
-	max-height: 300px;
-	min-width: 300px;
-	width: 45vw;
-	max-width: 550px;
-	border-radius: 1rem;
-	object-fit: cover;
+  min-height: 200px;
+  height: 40vh;
+  max-height: 300px;
+  min-width: 300px;
+  width: 45vw;
+  max-width: 550px;
+  border-radius: 1rem;
+  object-fit: cover;
 }
-
 
 a:hover {
   border-color: #646cff;
@@ -164,4 +162,14 @@ a:hover {
   margin-bottom: 0.25rem;
 }
 
+.project-links {
+  display: grid;
+  place-items: center;
+  width: 100px;
+  background-color: #333;
+  border-radius: 1rem;
+}
+
+.project-links > a > img {
+  scale: 1.5;
 }

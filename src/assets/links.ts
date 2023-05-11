@@ -5,10 +5,11 @@ import ideaBoxImg from './images/ideabox.png'
 export type TProject = {
   title: string
   description: string
-  deployURL?: string
+  deployURL: string
   githubURL: string
   previewImg: string
   id: number
+  stack: string
 }
 
 export const links: TProject[] = [
@@ -19,7 +20,9 @@ export const links: TProject[] = [
     deployURL: 'https://sample-space-fe.herokuapp.com/',
     githubURL: 'https://github.com/Sample-Space/sampleSpaceFE',
     previewImg: sampleSpaceImg,
-    id: 0
+    id: 0,
+    stack:
+      'Built with React and Ruby on Rails, Samples hosted with Amazon Web Services, tested with Cypress'
   },
   {
     title: 'Roll for Initiative',
@@ -28,7 +31,9 @@ export const links: TProject[] = [
     deployURL: 'https://roll-for-initiative-one.vercel.app/',
     githubURL: 'https://github.com/jskomal/roll-for-initiative',
     previewImg: rollForInitiativeImg,
-    id: 1
+    id: 1,
+    stack:
+      'Built with Typescript and React, styled with CSS, tested with Cypress, Routed with React Router'
   },
   {
     title: 'Idea Ideabox Box',
@@ -37,25 +42,8 @@ export const links: TProject[] = [
     deployURL: 'https://idea-idea-box-box.vercel.app/',
     githubURL: 'https://github.com/jskomal/idea-idea-box-box',
     previewImg: ideaBoxImg,
-    id: 2
-  }
-]
-
-export const cards = [
-  {
-    title: "Hello, I'm Jordan!",
-    body: "I'm a Front End Engineer and I believe that any technology that has reached its full potential should appear indistinguishable from magic, and my goal is to facilitate bringing that magic home, providing an unparalleled user experience through immaculate design and implementation. As a strategic problem solver, I excel at planning, testing, and building designs, presenting clear and intuitive user flows, and materializing professionally unified styled UIs. I've always excelled at learning new languages, from literal languages achieving a summa cum laude award from the National Latin Exam during High School, to musical languages, following my collegiate journey culminating in my graduation from the New England Conservatory of Music. I, being a perpetual student, bring this same commitment of learning to my career in software development. Let's connect, talk music, learning, and web development!",
-    img: null,
-    link1: null,
-    link2: null,
-    project: null
-  },
-  {
-    title: 'Hello, NUMBAH 2!',
-    body: "I'm a Front End Engineer and I believe that any technology that has reached its full potential should appear indistinguishable from magic, and my goal is to facilitate bringing that magic home, providing an unparalleled user experience through immaculate design and implementation. As a strategic problem solver, I excel at planning, testing, and building designs, presenting clear and intuitive user flows, and materializing professionally unified styled UIs. I've always excelled at learning new languages, from literal languages achieving a summa cum laude award from the National Latin Exam during High School, to musical languages, following my collegiate journey culminating in my graduation from the New England Conservatory of Music. I, being a perpetual student, bring this same commitment of learning to my career in software development. Let's connect, talk music, learning, and web development!",
-    img: null,
-    link1: null,
-    link2: null,
-    project: null
+    id: 2,
+    stack:
+      'Built with Typescript and React, styled with CSS, tested with Cypress, Routed with React Router'
   }
 ]
